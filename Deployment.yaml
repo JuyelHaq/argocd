@@ -3,10 +3,10 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: myapp
-  name: myapp
+    app: test-app
+  name: test-app
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: test-app
