@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: test-app
-        image: juyel1/flask-kube:5.0
+        image: juyel1/argocd:1.0
         resources:
           limits:
             memory: "128Mi"
