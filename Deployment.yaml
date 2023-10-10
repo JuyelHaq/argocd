@@ -6,7 +6,7 @@ metadata:
     app: test-app
   name: test-app
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: test-app
@@ -25,4 +25,8 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 5000
-  
+     
+
+
+
+
