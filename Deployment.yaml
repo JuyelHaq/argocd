@@ -1,14 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app-deployment
+  creationTimestamp: null
+  labels:
+    app: myapp
+  name: myapp
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: test-app
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: test-app
     spec:
@@ -21,3 +25,4 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 5000
+  
